@@ -7,6 +7,71 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
+        <?php include("includes/header.php"); ?>
+<style>
+    .main-header {
+        display: none;
+    }
+
+    .main-footer {
+        display: none;
+    }
+</style>
+
+<div class="container.fluid">
+    <div class="row">
+        <div class="col-lg-6 p-0">
+            <div class="login-left-bg">
+                <img src="images/logo_white.png" width="300px">
+                <div class="loginp">
+                    <p>Visa Consultancy and Medical for <br> employment visas</p>
+                </div>
+                <div class="back_btn">
+                    <a href="index.php"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 p-0">
+            <div class="login-right-bg ">
+                <h3>Logged in to Your Account.</h3>
+                <p>Obtain your visa with ease and efficiency</p>
+                <ul class="nav nav-tabs navigation" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Login</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><a href="register.php"> Register</button>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <form class="myform">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label fl ">Email address</label>
+                                <input type="email" class="form-control fc" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail Address*">
+
+                            </div>
+                            <div class="mb-3 pass">
+                                <label for="exampleInputPassword1" class="form-label fl">Password</label>
+                                <input type="password" class="form-control fc" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="login">
+                                <button type="submit" class="btn btn-primary button">Login</button>
+                                <a href="forgotpassword.php">Forget password?</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">.2..</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<?php include("includes/footer.php"); ?>
+    </div>
     <div class="app-container">
         <header>
             <h1>Health Vital Monitoring</h1>
