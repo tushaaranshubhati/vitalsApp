@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="app-container">
         <header>
             <h1>Health Vital Monitoring</h1>
         </header>
         <div class="content">
-            <div class="measurement-section">
-                <button id="startMeasurement">Start Measurement</button>
-            </div>
+            <div class="camera-section">
+               // <video id="camera" autoplay></video>
+                <button id="startMeasurement" onclick="measureVitals()">Start Measurement</button>
+            </div>//
             <div class="vitals-display">
                 <p id="heartRate">Heart Rate: -- bpm</p>
                 <p id="oxygenLevel">Oxygen Level: -- %</p>
